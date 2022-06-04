@@ -46,6 +46,6 @@ app.post("/", function(req, res){
 });
 
 
-app.listen(5500, function(){
+app.listen(process.env.PORT || 5500, function(){
     console.log("Server connected successfully on port 5500");
 });
